@@ -25,7 +25,7 @@ elif modulo == "Módulo Array":
    datos_produccion = np.random.randInt(limite_inferior,limite_superior, cantidad_datos)
    st.write(datos_produccion) 
    st.write("La producción total es:" ,  np.sum(datos_produccion))
-   st.write("La producción promedio es:" , np.mean(datos_produccion) 
+   st.write("La producción promedio es:" , np.mean(datos_produccion)) 
   
 
 else:

@@ -1,12 +1,22 @@
 import streamlit as st
 st.title("Proyecto módulo 1 Fundamentals")
 st.sidebar.title("Parámetros")
+
 st.image("Python_logo.png")
 st.sidebar.image("DMC.png")
 
-valor_inicial =st.number_input("Ingrese el valor inicial", value =0)
-valor_final =st.number_input("Ingrese el valor final", value=1 )
+modulo =st.sidebar.selectbox("Elija un módulo",["Módulos Listas","Módulo Array","Módulo Funciones"])
 
-lista_numerica= list(range(valor_inicial, valor_final))
+if modulo == "Módulo Listas":  
 
-st.write(lista_numerica)
+  valor_inicial =st.number_input("Ingrese el valor inicial", value =0)
+  valor_final =st.number_input("Ingrese el valor final", value=1 )
+  lista_numerica= list(range(valor_inicial, valor_final))
+  st.write(lista_numerica)
+
+elif modulo == "Módulo Array":  
+   st.write("Estas en el módulo de arreglos")
+
+else:
+   st.write("Estas en el módulo de funciones")
+  

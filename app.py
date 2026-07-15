@@ -29,4 +29,10 @@ elif modulo == "Módulo Array":
   
 else:
   st.write("Estas en el módulo de funciones")
+  principal =st.number_input("Ingrese el monto del préstamo", value =0)
+  tasa_anual =st.number_input("Ingrese la Tasa anual en decimalr", value =0.10)
+  anios=st.number_input("Ingrese el Número de años del préstamo", value =1)
+  pagos_por_anio=st.number_input("Ingrese la Cantidad de pagos por año", value =12)
   
+  cuota = lf.cuota_prestamo(principal,tasa_anual,anios, pagos_por_anio )
+  st.write("La cuota mensual de pago será", cuota)
